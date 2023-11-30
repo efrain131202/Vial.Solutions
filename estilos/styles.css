@@ -1,0 +1,96 @@
+.navbar {
+  background-color: #ffffff;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-logo h5 {
+  text-decoration: none;
+  color: #5CC5C5;
+  font-weight: bold;
+  font-size: 1.5em;
+  font-family: "Courier New", Courier, monospace;
+}
+.navbar-items {
+  list-style: none;
+  display: flex;
+  gap: 5px;
+}
+.navbar-items li a {
+  text-decoration: none;
+  color: #333333;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-size: 15px;
+}
+.navbar-items li a:hover {
+  background-color: #5CC5C5;
+}
+.navbar-toggle {
+  display: none;
+}
+.navbar.active .navbar-items {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+}
+.navbar.active .navbar-items li {
+  width: 100%;
+  text-align: center;
+}
+.navbar.active .navbar-items li a {
+  display: block;
+  padding: 10px 0;
+}
+.navbar.active-toggle {
+  display: block;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+.container .image-wrapper {
+  max-width: 50%;
+}
+.container .image-wrapper img {
+  max-width: 70%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+.container .image-wrapper img:hover {
+  transform: scale(1.1);
+}
+.container .content {
+  margin-top: 20px;
+}
+.container .content h1 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #5CC5C5;
+  font-size: 50px;
+  font-family: "Courier New", Courier, monospace;
+}
+.container .content .text {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: showText 5s steps(40) infinite;
+}
+
+@keyframes showText {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}/*# sourceMappingURL=styles.css.map */
