@@ -21,6 +21,7 @@
   font-weight: bold;
   font-size: 1.5em;
   font-family: "Courier New", Courier, monospace;
+  padding-left: 7.5px;
 }
 .navbar-items {
   list-style: none;
@@ -125,4 +126,55 @@
   color: #000000;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-align: center;
+}
+
+.mision-vision-content {
+  color: #05A7A7;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  padding-top: 50px;
+  padding-bottom: 80px;
+}
+
+.mission-vision-section {
+  display: flex;
+  flex-direction: column;
+}
+.mission-vision-section .mission,
+.mission-vision-section .vision {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.mission-vision-section .mission img,
+.mission-vision-section .vision img {
+  max-width: 100%;
+  height: auto;
+  width: 350px;
+  height: 300px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.mission-vision-section .mission img:hover,
+.mission-vision-section .vision img:hover {
+  transform: scale(1.1);
+}
+.mission-vision-section .mission p,
+.mission-vision-section .vision p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000000;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+@media screen and (min-width: 768px) {
+  .mission-vision-section {
+    flex-direction: row;
+  }
+  .mission-vision-section .mission,
+  .mission-vision-section .vision {
+    width: 50%;
+    margin-bottom: 0;
+  }
 }/*# sourceMappingURL=styles.css.map */

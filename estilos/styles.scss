@@ -34,6 +34,7 @@ $font-secondary: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-seri
       font-weight: bold;
       font-size: 1.5em;
       font-family: $font-primary;
+      padding-left: 7.5px;
       
     }
   }
@@ -154,7 +155,7 @@ $font-secondary: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-seri
   text-align: center;
 }
 
-.about-content p{
+.about-content p {
   color: $text-color;
   font-family: $font-secondary;
   text-align: center;
@@ -162,10 +163,53 @@ $font-secondary: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-seri
 
 // Estilos para seccion Mision-vision
 
+.mision-vision-content {
+  color: $primary-color;
+  text-align: center;
+  font-family: $font-primary;
+  padding-top: 50px;
+  padding-bottom: 80px;
+}
 
+.mission-vision-section {
+  display: flex;
+  flex-direction: column;
 
+  .mission,
+  .vision {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
 
+    img {
+      max-width: 100%;
+      height: auto;
+      width: 350px;
+      height: 300px;
+      margin-bottom: 10px;
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+      &:hover {
+        transform: scale(1.1);
+        }
+    }
 
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+      color: $text-color;
+      font-family: $font-secondary;
+    }
+  }
 
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
 
-
+    .mission,
+    .vision {
+      width: 50%;
+      margin-bottom: 0;
+    }
+  }
+}
