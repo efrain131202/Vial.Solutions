@@ -161,6 +161,25 @@ $font-secondary: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-seri
   text-align: center;
 }
 
+.button {
+  text-decoration: none;
+  color: $text-color;
+  background-color: $primary-color;
+  border-radius: 30px;
+  padding: 10px 7.5px;
+  font-family: $font-secondary;
+}
+
+.button:hover{
+  animation: pulsate 10s ease-in-out;
+}
+
+@keyframes pulsate {
+  0%{
+    box-shadow: 0 0 100px $primary-color;
+  }
+}
+
 // Estilos para seccion Mision-vision
 
 .mision-vision-content {
@@ -213,3 +232,6 @@ $font-secondary: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-seri
     }
   }
 }
+
+
+

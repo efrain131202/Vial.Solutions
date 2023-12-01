@@ -128,6 +128,24 @@
   text-align: center;
 }
 
+.button {
+  text-decoration: none;
+  color: #000000;
+  background-color: #05A7A7;
+  border-radius: 30px;
+  padding: 10px 7.5px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.button:hover {
+  animation: pulsate 10s ease-in-out;
+}
+
+@keyframes pulsate {
+  0% {
+    box-shadow: 0 0 100px #05A7A7;
+  }
+}
 .mision-vision-content {
   color: #05A7A7;
   text-align: center;
