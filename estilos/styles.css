@@ -108,9 +108,11 @@
 .about-content h2 {
   color: #05A7A7;
   font-family: "Courier New", Courier, monospace;
+  text-align: center;
 }
 
 .about-content p {
   color: #000000;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
 }/*# sourceMappingURL=styles.css.map */

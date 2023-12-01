@@ -140,11 +140,13 @@ $font-secondary: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-seri
 .about-content h2 {
   color: $primary-color;
   font-family: $font-primary;
+  text-align: center;
 }
 
 .about-content p{
   color: $text-color;
   font-family: $font-secondary;
+  text-align: center;
 }
 
 
