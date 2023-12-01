@@ -1,3 +1,5 @@
+//
+
 document.addEventListener("DOMContentLoaded", function() {
     const navbarLinks = document.querySelectorAll(".navbar-items a");
     const toggleButton = document.getElementById("toggleButton");
@@ -10,6 +12,8 @@ document.addEventListener("DOMContentLoaded", function() {
     toggleButton.addEventListener('click', function() {
       navbar.classList.toggle('active');
     });
+
+    //
   
     function smoothScroll(event) {
       event.preventDefault();
@@ -27,11 +31,15 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 
+  //
+
   
   document.addEventListener("DOMContentLoaded", function() {
     const text = document.querySelector('.text');
     text.style.animationPlayState = 'running';
   });
+
+  //
 
   window.addEventListener('scroll', () => {
     const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
@@ -41,4 +49,9 @@ document.addEventListener("DOMContentLoaded", function() {
     const progressBar = document.querySelector('.progress-bar');
     progressBar.style.width = scrolled + '%';
   });
+
+  //
+
+
+  
   
