@@ -6,8 +6,19 @@ $text-color: #000000;
 $font-primary: 'Courier New', Courier, monospace;
 $font-secondary: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
+// Estilos para Animacion-Scroll
 
-// estilos para la navbar
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: $primary-color;
+  z-index: 1000;
+}
+
+// Estilos para la navbar
 
 .navbar {
   background-color: $background;
