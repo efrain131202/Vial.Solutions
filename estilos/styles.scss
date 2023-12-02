@@ -401,14 +401,14 @@ $font-secondary: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-seri
     h2 {
       font-family: $font-secondary;
       margin: 0;
+      color: $primary-color;
     }
-  }
 
-  .text {
-    overflow: hidden;
-    white-space: nowrap;
-    animation: showText 5s steps(40) infinite;
-    font-family: $font-secondary;
+    span {
+      font-family: $font-secondary;
+      margin: 0;
+      color: $text-color;
+    }
   }
 
 
@@ -427,6 +427,70 @@ $font-secondary: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-seri
 
     .qr-code {
       transition: none; 
+    }
+  }
+}
+
+// Estilos para seccion de Descargas
+
+.downloads {
+  display: flex;
+  justify-content: space-around;
+
+  .platform {
+    width: 45%;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    transition: background-color 0.3s ease-in-out;
+    margin-bottom: 30px; // Agregamos un margen inferior para separar las secciones
+
+    i {
+      font-size: 3em;
+    }
+
+    h2 {
+      margin-top: 10px;
+    }
+
+    p {
+      margin-top: 10px;
+      font-size: 0.9em;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 0.9em;
+      cursor: pointer;
+    }
+  }
+
+  .ios {
+    background-color: #ccc;
+
+    &:hover {
+      background-color: #aaa;
+    }
+  }
+
+  .android {
+    background-color: #f0f0f0;
+
+    &:hover {
+      background-color: #ddd;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    text-align: center;
+    padding-left: 15PX;
+
+    .platform {
+      width: 90%;
     }
   }
 }

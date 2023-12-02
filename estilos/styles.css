@@ -349,12 +349,12 @@
 .qr-section .text-container h2 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   margin: 0;
+  color: #05A7A7;
 }
-.qr-section .text {
-  overflow: hidden;
-  white-space: nowrap;
-  animation: showText 5s steps(40) infinite;
+.qr-section .text-container span {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 0;
+  color: #000000;
 }
 @media screen and (max-width: 768px) {
   .qr-section {
@@ -370,5 +370,58 @@
   }
   .qr-section .qr-code {
     transition: none;
+  }
+}
+
+.downloads {
+  display: flex;
+  justify-content: space-around;
+}
+.downloads .platform {
+  width: 45%;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  transition: background-color 0.3s ease-in-out;
+  margin-bottom: 30px;
+}
+.downloads .platform i {
+  font-size: 3em;
+}
+.downloads .platform h2 {
+  margin-top: 10px;
+}
+.downloads .platform p {
+  margin-top: 10px;
+  font-size: 0.9em;
+}
+.downloads .platform button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.9em;
+  cursor: pointer;
+}
+.downloads .ios {
+  background-color: #ccc;
+}
+.downloads .ios:hover {
+  background-color: #aaa;
+}
+.downloads .android {
+  background-color: #f0f0f0;
+}
+.downloads .android:hover {
+  background-color: #ddd;
+}
+@media screen and (max-width: 767px) {
+  .downloads {
+    flex-direction: column;
+    text-align: center;
+    padding-left: 15PX;
+  }
+  .downloads .platform {
+    width: 90%;
   }
 }/*# sourceMappingURL=styles.css.map */

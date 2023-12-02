@@ -49,6 +49,16 @@ window.addEventListener('scroll', () => {
   progressBar.style.width = scrolled + '%';
 });
 
+document.querySelector('.download-ios').addEventListener('click', function() {
+  // Redirigir a la App Store de iOS
+  // window.location.href = 'https://apps.apple.com/your-ios-app';
+});
+
+document.querySelector('.download-android').addEventListener('click', function() {
+  // Redirigir a Google Play Store de Android
+  // window.location.href = 'https://play.google.com/store/apps/your-android-app';
+});
+
 
 
   
