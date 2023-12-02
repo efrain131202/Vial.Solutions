@@ -6,6 +6,15 @@ $text-color: #000000;
 $font-primary: 'Courier New', Courier, monospace;
 $font-secondary: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
+
+.gif-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    max-width: 100%;
+  }
+}
 // Estilos para Animacion-Scroll
 
 .progress-bar {
