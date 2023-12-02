@@ -420,6 +420,7 @@
     flex-direction: column;
     text-align: center;
     padding-left: 12PX;
+    padding-right: 12px;
   }
   .downloads .platform {
     width: 90%;
