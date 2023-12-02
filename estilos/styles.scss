@@ -404,6 +404,14 @@ $font-secondary: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-seri
     }
   }
 
+  .text {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: showText 5s steps(40) infinite;
+    font-family: $font-secondary;
+  }
+
+
   @media screen and (max-width: 768px) {
     flex-direction: column;
 
