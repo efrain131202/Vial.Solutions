@@ -373,6 +373,23 @@
   }
 }
 
+.download-section {
+  padding-top: 50px;
+}
+
+.download-section h2 {
+  color: #05A7A7;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+}
+
+.download-section p {
+  color: #000000;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
 .downloads {
   display: flex;
   justify-content: space-around;
@@ -388,12 +405,9 @@
 .downloads .platform i {
   font-size: 3em;
 }
-.downloads .platform h2 {
+.downloads .platform h2, .downloads .platform p {
   margin-top: 10px;
-}
-.downloads .platform p {
-  margin-top: 10px;
-  font-size: 0.9em;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .downloads .platform button {
   margin-top: 15px;
@@ -402,6 +416,26 @@
   border-radius: 5px;
   font-size: 0.9em;
   cursor: pointer;
+  color: initial;
+}
+.downloads .platform button.download-android, .downloads .platform button.download-ios {
+  border: 2px solid transparent;
+  transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+.downloads .platform button.download-android.download-android, .downloads .platform button.download-ios.download-android {
+  color: #ffffff;
+  background-color: transparent;
+  border-color: #ffffff;
+}
+.downloads .platform button.download-android.download-ios, .downloads .platform button.download-ios.download-ios {
+  color: #ffffff;
+  background-color: transparent;
+  border-color: #ffffff;
+}
+.downloads .platform button.download-android:hover, .downloads .platform button.download-ios:hover {
+  color: #000000;
+  border-color: #000000;
+  background-color: #05A7A7;
 }
 .downloads .ios {
   background-color: #ccc;
@@ -419,7 +453,7 @@
   .downloads {
     flex-direction: column;
     text-align: center;
-    padding-left: 12PX;
+    padding-left: 12px;
     padding-right: 12px;
   }
   .downloads .platform {
