@@ -419,7 +419,7 @@
   .downloads {
     flex-direction: column;
     text-align: center;
-    padding-left: 15PX;
+    padding-left: 12PX;
   }
   .downloads .platform {
     width: 90%;
