@@ -318,4 +318,51 @@
 }
 .card:hover .overlay {
   transform: translateY(0);
+}
+
+.qr-section {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+.qr-section .qr-container {
+  order: 1;
+  margin-right: 20px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  flex: 1;
+}
+.qr-section .qr-container .qr-code {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+.qr-section .qr-container:hover .qr-code {
+  transform: scale(1.1);
+}
+.qr-section .text-container {
+  order: 2;
+  flex: 2;
+  text-align: center;
+}
+.qr-section .text-container h2 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 0;
+}
+@media screen and (max-width: 768px) {
+  .qr-section {
+    flex-direction: column;
+  }
+  .qr-section .qr-container {
+    order: 2;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .qr-section .text-container {
+    order: 1;
+  }
+  .qr-section .qr-code {
+    transition: none;
+  }
 }/*# sourceMappingURL=styles.css.map */
