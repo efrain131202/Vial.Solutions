@@ -1,4 +1,4 @@
-//
+  //
 
 document.addEventListener("DOMContentLoaded", function() {
     const navbarLinks = document.querySelectorAll(".navbar-items a");
@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
       navbar.classList.toggle('active');
     });
 
-    //
+  //
   
     function smoothScroll(event) {
       event.preventDefault();
@@ -51,6 +51,5 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
   //
-
 
   
