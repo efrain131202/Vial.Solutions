@@ -242,5 +242,26 @@ $font-secondary: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-seri
   }
 }
 
+.valores-section{
+  align-items: center;
+  padding-top: 50px;
+}
+
+.valores-content {
+  text-align: center;
+}
+
+.valores-content h2 {
+  color: $primary-color;
+  font-family: $font-primary;
+  text-align: center;
+}
+
+.valores-content p {
+  color: $text-color;
+  font-family: $font-secondary;
+  text-align: center;
+}
+
 
 
