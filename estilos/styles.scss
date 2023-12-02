@@ -472,15 +472,15 @@ $font-secondary: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-seri
     background-color: #ccc;
 
     &:hover {
-      background-color: #aaa;
+      background-color: $primary-color;
     }
   }
 
   .android {
-    background-color: #f0f0f0;
+    background-color: #5AED9A;
 
     &:hover {
-      background-color: #ddd;
+      background-color: $primary-color;
     }
   }
 

@@ -407,13 +407,13 @@
   background-color: #ccc;
 }
 .downloads .ios:hover {
-  background-color: #aaa;
+  background-color: #05A7A7;
 }
 .downloads .android {
-  background-color: #f0f0f0;
+  background-color: #5AED9A;
 }
 .downloads .android:hover {
-  background-color: #ddd;
+  background-color: #05A7A7;
 }
 @media screen and (max-width: 767px) {
   .downloads {
