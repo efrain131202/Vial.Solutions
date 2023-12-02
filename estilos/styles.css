@@ -1,3 +1,28 @@
+.go-to-top-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  background-color: #05A7A7;
+  color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.go-to-top-button:hover {
+  animation: pulsate 10s ease-in-out;
+}
+
+@keyframes pulsate {
+  0% {
+    box-shadow: 0 0 100px #05A7A7;
+  }
+}
 .progress-bar {
   position: fixed;
   top: 0;

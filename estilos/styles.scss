@@ -6,6 +6,32 @@ $text-color: #000000;
 $font-primary: 'Courier New', Courier, monospace;
 $font-secondary: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
+// Estilos para boton de redireccion a pantalla inicial 
+.go-to-top-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  background-color: $primary-color;
+  color: $background;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.go-to-top-button:hover{
+  animation: pulsate 10s ease-in-out;
+}
+
+@keyframes pulsate {
+  0%{
+    box-shadow: 0 0 100px $primary-color;
+  }
+}
 
 // Estilos para Animacion-Scroll
 
