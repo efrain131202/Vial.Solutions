@@ -40,7 +40,7 @@
   justify-content: space-between;
   align-items: center;
 }
-.navbar-logo h5 {
+.navbar-logo a {
   text-decoration: none;
   color: #05A7A7;
   font-weight: bold;
@@ -135,6 +135,7 @@
 .about {
   align-items: center;
   padding-top: 50px;
+  background-color: #f2f2f2;
 }
 
 .about-content {
@@ -261,6 +262,7 @@
 }
 
 .gallery-seccion {
+  background-color: #f2f2f2;
   margin: 0;
   padding: 0;
   padding-top: 50px;
@@ -393,6 +395,7 @@
 .downloads {
   display: flex;
   justify-content: space-around;
+  padding-bottom: 100px;
 }
 .downloads .platform {
   width: 45%;
@@ -459,4 +462,58 @@
   .downloads .platform {
     width: 90%;
   }
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f2f2f2;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+.footer__column {
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .footer__column {
+    margin-bottom: 0;
+  }
+}
+.footer__logo img {
+  max-width: 100px;
+}
+.footer h2 {
+  color: #05A7A7;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+}
+.footer__social-icons {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+.footer__social-icons .social-icon {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 24px;
+  color: #000000;
+  transition: color 0.3s ease;
+  padding: 50px;
+}
+.footer__social-icons .social-icon:hover {
+  color: #05A7A7;
+}
+.footer__copyright {
+  color: #000000;
+  text-align: center;
+  font-size: 20px;
+  text-decoration: none;
+  text-align: center;
 }/*# sourceMappingURL=styles.css.map */

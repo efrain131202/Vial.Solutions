@@ -59,6 +59,19 @@ document.querySelector('.download-android').addEventListener('click', function()
   // window.location.href = 'https://play.google.com/store/apps/your-android-app';
 });
 
+// Este es solo un ejemplo de cómo podrías agregar un efecto al hacer clic en un icono
+const socialIcons = document.querySelectorAll('.social-icon');
+
+socialIcons.forEach(icon => {
+  icon.addEventListener('click', (event) => {
+    event.preventDefault();
+    const socialPlatform = icon.getAttribute('data-social');
+    // Aquí podrías agregar la lógica para redirigir a la plataforma social correspondiente
+    console.log(`Clic en el ícono de ${socialPlatform}`);
+  });
+});
+
+
 
 
   
