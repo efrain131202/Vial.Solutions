@@ -154,31 +154,36 @@
   </section>
 
   <footer class="footer" id="contacts">
-    <div class="footer__column">
-      <div class="footer__logo">
+    <div class="footer-content">
+      <div class="footer-logo">
         <img src="./assets/icon.png" alt="Logo de la empresa">
-        <h2>Vial</h2>
       </div>
-    </div>
-    <div class="footer__column">
-      <ul class="footer__social-icons">
-        <li><a href="#" class="social-icon" data-social="facebook"><i class="fab fa-facebook-f"></i></a></li>
-        <li><a href="#" class="social-icon" data-social="twitter"><i class="fab fa-instagram"></i></a></li>
-        <li><a href="#" class="social-icon" data-social="twitter"><i class="fa-brands fa-google"></i></a></li>
-      </ul>
-    </div>
-    <div class="footer__column">
-      <a href="link" class="footer__copyright">© Vial.Solutions</a>
-      <br>
+      <div class="social-media">
+        <a href="#" class="social-icon" onmouseover="toggleText(this, true)" onmouseout="toggleText(this, false)">
+          <i class="fab fa-facebook-f"></i>
+          <span class="social-text">Facebook</span>
+        </a>
+        <a href="#" class="social-icon" onmouseover="toggleText(this, true)" onmouseout="toggleText(this, false)">
+          <i class="fab fa-google"></i>
+          <span class="social-text">Google</span>
+        </a>
+        <a href="#" class="social-icon" onmouseover="toggleText(this, true)" onmouseout="toggleText(this, false)">
+          <i class="fab fa-instagram"></i>
+          <span class="social-text">Instagram</span>
+        </a>
+      </div>
+      <div class="legal">
+        <a href="#" class="legal-link">Términos y Condiciones</a>
+        <a href="#" class="legal-link">Aviso de Privacidad</a>
+        <span class="copyright">&copy; 2023 Vial.Solutions. Todos los derechos reservados.</span>
+      </div>
     </div>
   </footer>
   
-  <div class="footer__legales">
-    <a href="" class="footer__terminos">Terminos y condiciones</a>
-    <span class="footer__span">|</span>
-    <a href="" class="footer__terminos">Avisos de privacidad</a>
-  </div>
+
   
+  
+
 
 </body>
 </html>

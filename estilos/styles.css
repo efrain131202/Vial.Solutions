@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .go-to-top-button {
   position: fixed;
   bottom: 20px;
@@ -412,75 +413,64 @@
 }
 
 .footer {
+  background-color: #f2f2f2;
+  color: #fff;
+  padding: 30px 0;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.footer .footer-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #f2f2f2;
-  padding: 20px;
-  font-family: Arial, sans-serif;
 }
-@media screen and (min-width: 768px) {
-  .footer {
-    flex-direction: row;
-    justify-content: space-around;
-  }
-}
-.footer__column {
+.footer .footer-content .footer-logo {
   margin-bottom: 20px;
 }
-@media screen and (min-width: 768px) {
-  .footer__column {
-    margin-bottom: 0;
-  }
-}
-.footer__logo img {
+.footer .footer-content .footer-logo img {
   max-width: 100px;
+  height: auto;
 }
-.footer h2 {
-  color: #05A7A7;
-  font-family: "Courier New", Courier, monospace;
-  text-align: center;
-}
-.footer__social-icons {
-  list-style: none;
-  padding: 0;
-  display: flex;
-}
-.footer__social-icons .social-icon {
-  display: inline-block;
-  margin-right: 10px;
+.footer .footer-content .social-media .social-icon {
+  color: #000000;
   font-size: 24px;
+  margin: 0 8px;
+  padding: 40px;
+  position: relative;
+  display: inline-block;
+  transition: transform 0.3s ease-in-out; /* Transición de tamaño */
+}
+.footer .footer-content .social-media .social-icon i {
+  transition: opacity 0.3s ease-in-out; /* Transición de opacidad */
+}
+.footer .footer-content .social-media .social-icon .social-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out; /* Transición de opacidad */
+}
+.footer .footer-content .social-media .social-icon:hover i {
+  opacity: 0; /* Oculta el ícono al pasar el cursor */
+}
+.footer .footer-content .social-media .social-icon:hover .social-text {
+  opacity: 1; /* Muestra el nombre de la red social al pasar el cursor */
+}
+.footer .footer-content .legal {
+  margin-top: 20px;
+}
+.footer .footer-content .legal .legal-link {
   color: #000000;
-  transition: color 0.3s ease;
-  padding: 50px;
-}
-.footer__social-icons .social-icon:hover {
-  color: #05A7A7;
-}
-.footer__copyright {
-  color: #000000;
-  font-size: 20px;
   text-decoration: none;
-  text-align: center;
+  margin: 0 10px;
 }
-
-.footer__legales {
-  text-align: center;
-  background-color: #f2f2f2;
-  padding-bottom: 15px;
+.footer .footer-content .legal .legal-link:hover {
+  text-decoration: underline;
 }
-
-.footer__terminos {
-  text-decoration: none;
+.footer .footer-content .legal .copyright {
+  display: block;
+  margin-top: 10px;
   font-size: 12px;
-  color: grey;
-}
-
-.footer__terminos:hover {
-  color: #05A7A7;
-}
-
-.footer__span {
   color: #000000;
-  font-size: 15px;
 }/*# sourceMappingURL=styles.css.map */
