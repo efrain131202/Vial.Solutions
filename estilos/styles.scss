@@ -47,6 +47,11 @@ $font-secondary: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-seri
 
 // Estilos para la navbar
 
+.navbar-index:hover{
+ color: #000000;
+}
+
+
 .navbar {
   background-color: $background;
   padding: 5px 15px 0px 0px;
@@ -550,3 +555,108 @@ $font-secondary: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-seri
     }
   }
 }
+
+// Estilos para UserGuide
+
+.main-section{
+text-align: center;
+
+h1 {
+  color: $primary-color;
+  font-family: $font-secondary;
+}
+
+p {
+  color: $text-color;
+  font-family: $font-secondary;
+}
+}
+
+.container {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.tabs {
+  overflow: hidden;
+}
+
+.tablinks {
+  background-color: #f2f2f2;
+  float: left;
+  border: 1px solid #ccc;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 15px;
+  transition: background-color 0.3s ease;
+}
+
+.tablinks:hover {
+  background-color: $primary-color;
+}
+
+.tabcontent {
+  display: none;
+  padding: 20px;
+  animation: fadeIn 1s;
+
+  h2 {
+    color: $primary-color;
+    font-family: $font-secondary;
+  }
+
+  td {
+    color: $text-color;
+    font-family: $font-secondary;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+// Seccion de Video de YouTuve
+
+.video-title{
+  text-align: center;
+  font-family: $font-secondary;
+  color: $primary-color;
+}
+
+.video-section {
+  text-align: center;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 800px; 
+  margin: 0 auto;
+}
+
+.video-section h2 {
+  margin-top: 0;
+  padding: 10px;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilos/styles.css">
+    <link rel="shortcut icon" href="./assets/icon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/946937af14.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <title>Vial.Solutions</title>
+  </head>
+  
+  <body>
+  
+    <header class="progress-bar"></header>
+    <button id="goToTopBtn" class="go-to-top-button"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <nav class="navbar">
+        <div class="navbar-logo">
+          <a href="./index.html" class="navbar-index"><i class="fa-sharp fa-solid fa-house"></i></a>
+        </div>
+        <ul class="navbar-items">
+          <li><a href="#user-guide">Guia de uso</a></li>
+          <li><a href="#downloads">Descargas</a></li>
+          <li><a href="#contacts">Contactos</a></li>
+        </ul>
+        <div class="navbar-toggle">
+          <button id="toggleButton">&#9776;</button>
+        </div>
+      </nav>
+    
+      <section class="main-section">
+        <div class="main-content">
+          <h1>¿Necesitas ayuda?</h1>
+          <p>Te explicaremos cómo utilizar nuestra app.</p>
+          <p>Nuestra app está dividida en dos secciones:
+          <br> "Usuario"  y "proveedor".
+          <br> Por favor, selecciona la que te corresponde.</p>
+        </div>
+      </section>
+
+      <div class="container" id="user-guide">
+        <div class="tabs">
+          <button class="tablinks" onclick="openTab(event, 'user')">Usuario</button>
+          <button class="tablinks" onclick="openTab(event, 'provider')">Proveedor</button>
+        </div>
+      
+        <div id="user" class="tabcontent">
+          <h2>Pasos para Usuario</h2>
+          <table>
+            <tr>
+              <td>1.</td>
+              <td>Descripción del Paso 1 para Usuario</td>
+            </tr>
+            <tr>
+              <td>2.</td>
+              <td>Descripción del Paso 2 para Usuario</td>
+            </tr>
+            <tr>
+              <td>2.</td>
+              <td>Descripción del Paso 2 para Usuario</td>
+            </tr>
+            <tr>
+              <td>2.</td>
+              <td>Descripción del Paso 2 para Usuario</td>
+            </tr><tr>
+              <td>2.</td>
+              <td>Descripción del Paso 2 para Usuario</td>
+            </tr><tr>
+              <td>2.</td>
+              <td>Descripción del Paso 2 para Usuario</td>
+            </tr>
+          </table>
+        </div>
+      
+        <div id="provider" class="tabcontent">
+          <h2>Pasos para Proveedor</h2>
+          <table>
+            <tr>
+              <td>1.</td>
+              <td>Descripción del Paso 1 para Proveedor</td>
+            </tr>
+            <tr>
+              <td>2.</td>
+              <td>Descripción del Paso 2 para Proveedor</td>
+            </tr>
+            <tr>
+              <td>2.</td>
+              <td>Descripción del Paso 2 para Proveedor</td>
+            </tr><tr>
+              <td>2.</td>
+              <td>Descripción del Paso 2 para Proveedor</td>
+            </tr><tr>
+              <td>2.</td>
+              <td>Descripción del Paso 2 para Proveedor</td>
+            </tr><tr>
+              <td>2.</td>
+              <td>Descripción del Paso 2 para Proveedor</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="video-title">
+        <h1>Visita nuestro canal si aún tienes dudas.</h1>
+      </div>
+
+      <div class="video-section">
+        <div class="video-container">
+          <iframe width="320" height="180" src="https://www.youtube.com/embed/TU-ID-DEL-VIDEO" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      
+
+      <section class="download-section" id="downloads">
+        <h2>Descarga nuestra aplicación móvil</h2>
+        <p>Nuestra aplicación móvil está disponible 
+        <br>en diversas plataformas para su descarga.
+        </p>
+      </section>
+      
+      <section class="downloads">
+        <div class="platform ios">
+          <i class="fab fa-apple"></i>
+          <h2>iOS</h2>
+          <p>Descripción breve de la app para iOS.</p>
+          <button class="download-ios"><i class="fa-solid fa-download"></i></button>
+        </div>
+        <div class="platform android">
+          <i class="fab fa-android"></i>
+          <h2>Android</h2>
+          <p>Descripción breve de la app para Android.</p>
+          <button class="download-android"><i class="fa-solid fa-download"></i></button>
+        </div>
+      </section>
+    
+      <footer class="footer" id="contacts">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <img src="./assets/icon.png" alt="Logo de la empresa">
+          </div>
+          <div class="social-media">
+            <a href="#" class="social-icon" onmouseover="toggleText(this, true)" onmouseout="toggleText(this, false)">
+              <i class="fab fa-facebook-f"></i>
+              <span class="social-text">Facebook</span>
+            </a>
+            <a href="#" class="social-icon" onmouseover="toggleText(this, true)" onmouseout="toggleText(this, false)">
+              <i class="fab fa-google"></i>
+              <span class="social-text">Google</span>
+            </a>
+            <a href="#" class="social-icon" onmouseover="toggleText(this, true)" onmouseout="toggleText(this, false)">
+              <i class="fab fa-instagram"></i>
+              <span class="social-text">Instagram</span>
+            </a>
+          </div>
+          <div class="legal">
+            <a href="#" class="legal-link">Términos y Condiciones</a>
+            <a href="#" class="legal-link">Aviso de Privacidad</a>
+            <span class="copyright">&copy; 2023 Vial.Solutions. Todos los derechos reservados.</span>
+          </div>
+        </div>
+      </footer>
+      
+    
+</body>
+</html>
